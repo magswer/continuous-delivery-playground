@@ -17,6 +17,6 @@ jobs:
       run: |
         set -ev
         cd modern-web-app
-        npm i 
+        npm ci 
         npm run test:unit
       
