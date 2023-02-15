@@ -1,0 +1,17 @@
+name: Main Pipeline
+on: 
+  push: 
+    branches:
+      -main
+
+jobs:
+Unitest:
+  runs-on: ubuntu-latest
+  steps:
+  - name: "Lanzar test unitatios"
+    run:  
+      set -ev
+      cd modern-web-app
+      npm i 
+      npm run test:unit
+    
