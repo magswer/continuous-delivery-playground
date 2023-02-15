@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: "Lanzar test unitatios"
+    - uses: actions/setup-noce@v3
+      with: 
+       node-version: 18
+    - name: Lanzar test unitatios
       run: |
         set -ev
         cd modern-web-app
